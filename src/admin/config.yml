@@ -1,10 +1,10 @@
 backend:
   # Use netlify identity as backend
   name: git-gateway
-  branch: master
+  branch: main
   ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
+  name: github
+  repo: kylewcode/portfolio-website
 media_folder: "src/static/img"
 public_folder: "/static/img"
 

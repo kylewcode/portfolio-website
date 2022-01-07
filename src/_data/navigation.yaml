@@ -1,10 +1,14 @@
 ---
 items:
-  - text: Menu One
+  - text: About
     url: "#"
-  - text: Menu Two
+  - text: Projects
     url: "#"
-  - text: Menu Three
+  - text: Social
+    url: "#"
+  - text: Skills
+    url: "#"
+  - text: Hire Me
     url: "#"
   - text: Blog
     url: "/blog"

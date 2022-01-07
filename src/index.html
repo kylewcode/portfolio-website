@@ -1,39 +1,86 @@
 ---
 layout: default
-title: The Portfolio of Kyle Williams
+firstname: Kyle
+lastname: Williams
+title: Frontend React Developer
 path: home
 ---
 
-<div
-  class="
-    container
-    mx-auto
-    lg:h-screen
-    flex flex-col
-    justify-center
-    items-center
-  "
->
-  <h1>
-    Welcome to
-    <strong
-      class="
-        bg-clip-text
-        text-transparent
-        bg-gradient-to-r
-        from-blue-500
-        to-purple-500
-      "
+<div class="grid grid-cols-1 justify-items-center">
+  <section
+    class="container mx-auto lg:h-screen flex flex-col justify-center items-center"
+  >
+    <div>
+      <h1 class="text-raisin-black">
+        <strong class="md:block">{{firstname}}</strong>
+        <strong class="md:block">{{lastname}}</strong>
+        <strong class="block font-serif font-thin tracking-widest text-base"
+          >{{title}}</strong
+        >
+      </h1>
+      <div class="bg-goldenrod w-36 text-center mx-auto hidden md:block">
+        <a href="#projects">View My Projects</a>
+      </div>
+    </div>
+
+    <img src="https://source.unsplash.com/random/150x150" alt="Profile image" />
+
+    <div
+      class="bg-cg-blue w-36 text-center mx-auto mt-1.5 md:hidden rounded-sm text-white"
     >
-      {{title}}
-    </strong>
-  </h1>
+      <a href="#projects">View My Projects</a>
+    </div>
+  </section>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+  <section id="projects" class="container flex flex-col justify-center gap-y-8">
+    <h2 class="text-raisin-black text-2xl text-center">PROJECTS</h2>
 
-  {% include "./_includes/partials/content.html" %}
+    <div class="border-2 h-36">Project</div>
+    <div class="border-2 h-36">Project</div>
+    <div class="border-2 h-36">Project</div>
+  </section>
+
+  <section id="social" class="bg-cg-blue w-full">
+    <p class="text-white text-lg">
+      Want to learn more about my work? Check out my
+      <a
+        href="https://twitter.com/kylewcode"
+        class="hover:text-cg-blue hover:underline font-semibold"
+      >
+        Twitter,</a
+      >
+      <a
+        href="https://www.linkedin.com/in/85kylewilliams/"
+        class="hover:text-cg-blue hover:underline font-semibold"
+        >LinkedIn</a
+      >
+      profile, review my code on
+      <a
+        href="https://github.com/kylewcode"
+        class="hover:text-cg-blue hover:underline font-semibold"
+        >Github</a
+      >, or read my
+      <a
+        href="https://dev.to/kylewcode"
+        class="hover:text-cg-blue hover:underline font-semibold"
+        >Blog.</a
+      >
+    </p>
+  </section>
+
+  <section id="skills" class="text-raisin-black text-center">
+    <h2 class="text-2xl text-center">SKILLS/TECH</h2>
+
+    <h3 class="text-lg text-center m-auto">Frontend Development</h3>
+    <ul class="list-disc inline-block -ml-10 text-left">
+      <li>React</li>
+      <li>Javascript</li>
+      <li>HTML5</li>
+      ...
+    </ul>
+  </section>
+
+  <section id="hire-me" class="bg-goldenrod w-full">
+    <p class="text-white text-6xl">HIRE ME</p>
+  </section>
 </div>

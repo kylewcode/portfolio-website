@@ -11,7 +11,13 @@ module.exports = {
       center: true,
     },
     extend: {
-      colors: {},
+      colors: {
+        cultured: "#f9f8f8",
+        "raisin-black": "#272838",
+        "shamrock-green": "#499f68",
+        "cg-blue": "#1282a2",
+        goldenrod: "#e6af2e",
+      },
     },
   },
   variants: {},
