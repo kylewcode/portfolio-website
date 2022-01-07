@@ -18,7 +18,9 @@ path: home
           >{{title}}</strong
         >
       </h1>
-      <div class="bg-goldenrod w-36 text-center mx-auto hidden md:block">
+      <div
+        class="border w-36 text-center text-raisin-black mx-auto hidden md:block"
+      >
         <a href="#projects">View My Projects</a>
       </div>
     </div>
@@ -26,7 +28,7 @@ path: home
     <img src="https://source.unsplash.com/random/150x150" alt="Profile image" />
 
     <div
-      class="bg-cg-blue w-36 text-center mx-auto mt-1.5 md:hidden rounded-sm text-white"
+      class="border w-36 text-raisin-black text-center mx-auto mt-1.5 md:hidden rounded-sm drop-shadow hover:drop-shadow-xl"
     >
       <a href="#projects">View My Projects</a>
     </div>
@@ -40,8 +42,8 @@ path: home
     <div class="border-2 h-36">Project</div>
   </section>
 
-  <section id="social" class="bg-cg-blue w-full">
-    <p class="text-white text-lg">
+  <section id="social">
+    <p class="text-raisin-black text-lg">
       Want to learn more about my work? Check out my
       <a
         href="https://twitter.com/kylewcode"
@@ -69,10 +71,11 @@ path: home
   </section>
 
   <section id="skills" class="text-raisin-black text-center">
-    <h2 class="text-2xl text-center">SKILLS/TECH</h2>
+    <h2 class="text-2xl">SKILLS/TECH</h2>
 
-    <h3 class="text-lg text-center m-auto">Frontend Development</h3>
-    <ul class="list-disc inline-block -ml-10 text-left">
+    <h3 class="text-lg m-auto">Frontend Development</h3>
+
+    <ul class="list-disc inline-block md:-ml-10 md:text-left">
       <li>React</li>
       <li>Javascript</li>
       <li>HTML5</li>
@@ -80,9 +83,9 @@ path: home
     </ul>
   </section>
 
-  <section id="hire-me" class="bg-goldenrod w-full">
-    <h2 class="text-white text-2xl text-center">HIRE ME</h2>
-    <a href="#"
+  <section id="hire-me" class="text-raisin-black text-center">
+    <h2 class="text-2xl">HIRE ME</h2>
+    <a href="#" class="hover:text-cg-blue hover:underline font-semibold"
       >Download Resume
       <img
         src="https://source.unsplash.com/random/50x50"
@@ -90,7 +93,9 @@ path: home
         class="inline"
       />
     </a>
-    <a href="mailto:williams.kyleg@gmail.com" class="block"
+    <a
+      href="mailto:williams.kyleg@gmail.com"
+      class="block hover:text-cg-blue hover:underline font-semibold"
       >williams.kyleg@gmail.com</a
     >
   </section>
