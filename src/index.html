@@ -19,7 +19,7 @@ path: home
         >
       </h1>
       <div
-        class="border w-36 text-center text-raisin-black mx-auto hidden md:block"
+        class="border-double w-36 text-center text-raisin-black mx-auto hidden md:block"
       >
         <a href="#projects">View My Projects</a>
       </div>
@@ -28,14 +28,20 @@ path: home
     <img src="/static/img/kyle-profile-150w.jpeg" alt="Profile image" />
 
     <div
-      class="border w-36 text-raisin-black text-center mx-auto mt-8 mb-2 md:hidden rounded-sm drop-shadow hover:drop-shadow-xl"
+      class="border-8 border-double border-shamrock-green w-40 text-raisin-black text-center mx-auto mt-8 mb-2 p-0.5 md:hidden opacity-75 hover:shadow-lg hover:opacity-100"
     >
-      <a href="#projects">View My Projects</a>
+      <a href="#projects" class="focus:outline-none focus:text-cg-blue"
+        >View My Projects</a
+      >
     </div>
   </section>
 
   <div class="w-8 h-8 mb-28">
-    <img src="/static/img/down-arrow-outlined.svg" alt="Down arrow" />
+    <img
+      src="/static/img/down-arrow-outlined.svg"
+      class="animate-bounce"
+      alt="Down arrow"
+    />
   </div>
 
   <section id="projects" class="container flex flex-col justify-center gap-y-8">
