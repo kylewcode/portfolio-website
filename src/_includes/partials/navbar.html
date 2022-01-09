@@ -1,8 +1,18 @@
 <div class="{{ 'lg:fixed' if path == 'home' }} w-full">
   <nav
     class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto"
-    x-data="{ isOpen: false }"
-    @keydown.escape="isOpen = false"
+    x-data="{ 
+      isOpen: false,
+      toggle() {
+        this.isOpen = this.isOpen ? close() : true;
+      },
+      close() {
+        this.isOpen = false;
+      }
+    }"
+    @keydown.escape.prevent.stop="close()"
+    @focusin.window="!$refs.menu.contains($event.target) && close()"
+    x-id="['dropdown-button']"
   >
     <!--Logo etc-->
     <div class="flex items-center">
@@ -11,37 +21,24 @@
 
     <!--Toggle button (hidden on large screens)-->
     <button
-      @click="isOpen = !isOpen"
+      @click="toggle()"
+      aria-expanded="isOpen"
+      aria-controls="$id('dropdown-button')"
       type="button"
-      class="ml-auto block lg:hidden px-2 text-raisin-black hover:text-cg-blue focus:outline-none focus:text-cg-blue
-      :class="{ 'transition transform-180': isOpen }"
+      class="ml-auto block lg:hidden px-2 text-raisin-black hover:text-cg-blue focus:outline-none focus:text-cg-blue"
       aria-label="Menu"
     >
-      <svg
-        class="h-6 w-6 fill-current"
-        xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 0 24 24"
-      >
-        <path
-          x-show="isOpen"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-        />
-        <path
-          x-show="!isOpen"
-          fill-rule="evenodd"
-          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-        />
-      </svg>
+      NavButton
     </button>
 
     <!--Menu-->
     <div
+      x-ref="menu"
+      x-show="isOpen"
+      @click.outside="close()"
+      :id="$id('dropdown-button')"
+      style="display: none"
       class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center"
-      :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
-      @click.away="isOpen = false"
-      x-show.transition="true"
     >
       {% if navigation.items %}
 
@@ -51,7 +48,6 @@
         {% for item in navigation.items %}
         <li class="nav__item mr-3">
           <a
-            @click="isOpen = false"
             class="text-ml inline-block text-raisin-black no-underline hover:text-cg-blue py-2 px-4"
             href="{{ item.url }}"
             >{{ item.text }}</a
