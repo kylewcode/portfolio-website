@@ -1,2 +1,20 @@
 ---
 projects:
+  - image: "https://source.unsplash.com/random/300x250"
+    title: "Project Uno"
+    description: "This is a great project!"
+    links:
+      - deployment: "#"
+        github: "#"
+  - image: "https://source.unsplash.com/random/300x250"
+    title: "Project Dos"
+    description: "This is a great project!"
+    links:
+      - deployment: "#"
+        github: "#"
+  - image: "https://source.unsplash.com/random/300x250"
+    title: "Project Tres"
+    description: "This is a great project!"
+    links:
+      - deployment: "#"
+        github: "#"

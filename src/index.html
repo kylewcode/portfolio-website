@@ -44,19 +44,30 @@ path: home
     />
   </div>
 
-  <section
-    id="projects"
-    class="container flex flex-col justify-center gap-y-8 divide-y"
-  >
+  <section id="projects" class="container flex flex-col justify-center gap-y-8">
     <h2
       class="w-1/2 mx-auto p-3 text-raisin-black text-2xl text-center border-b-2 shadow"
     >
       PROJECTS
     </h2>
 
-    <div class="h-36">Project</div>
-    <div class="h-36">Project</div>
-    <div class="h-36">Project</div>
+    {% if portfolio.projects %} {% for project in portfolio.projects %}
+    <div class="container w-full">
+      <div
+        class="relative w-full h-fit border p-4 mx-auto bg-local bg-cover bg-no-repeat"
+        style="background-image: url({{project.image}});"
+      >
+        <div class="w-full bg-white/75 rounded-sm p-4">
+          <h3>{{project.title}}</h3>
+          <p>{{project.description}}</p>
+          <strong>
+            <a href="">Check out deployment<br /></a>
+            <a href="">Review on Github</a>
+          </strong>
+        </div>
+      </div>
+    </div>
+    {% endfor%} {% endif %}
   </section>
 
   <section id="social">
