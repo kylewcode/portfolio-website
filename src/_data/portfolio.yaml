@@ -2,19 +2,19 @@
 projects:
   - image: "https://source.unsplash.com/random/300x250"
     title: "Project Uno"
-    description: "This is a great project!"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Turpis tincidunt id aliquet risus feugiat in ante. Tincidunt lobortis feugiat vivamus at augue eget. Massa placerat duis ultricies lacus sed turpis tincidunt. Ultricies mi quis hendrerit dolor magna. Ornare aenean euismod elementum nisi quis eleifend quam. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Neque volutpat ac tincidunt vitae semper quis lectus nulla at. Cras pulvinar mattis nunc sed blandit libero volutpat sed."
     links:
       - deployment: "#"
         github: "#"
   - image: "https://source.unsplash.com/random/300x250"
     title: "Project Dos"
-    description: "This is a great project!"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Turpis tincidunt id aliquet risus feugiat in ante. Tincidunt lobortis feugiat vivamus at augue eget. Massa placerat duis ultricies lacus sed turpis tincidunt. Ultricies mi quis hendrerit dolor magna. Ornare aenean euismod elementum nisi quis eleifend quam. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Neque volutpat ac tincidunt vitae semper quis lectus nulla at. Cras pulvinar mattis nunc sed blandit libero volutpat sed."
     links:
       - deployment: "#"
         github: "#"
   - image: "https://source.unsplash.com/random/300x250"
     title: "Project Tres"
-    description: "This is a great project!"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Turpis tincidunt id aliquet risus feugiat in ante. Tincidunt lobortis feugiat vivamus at augue eget. Massa placerat duis ultricies lacus sed turpis tincidunt. Ultricies mi quis hendrerit dolor magna. Ornare aenean euismod elementum nisi quis eleifend quam. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Neque volutpat ac tincidunt vitae semper quis lectus nulla at. Cras pulvinar mattis nunc sed blandit libero volutpat sed."
     links:
       - deployment: "#"
         github: "#"

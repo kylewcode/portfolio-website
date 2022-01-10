@@ -54,16 +54,39 @@ path: home
     {% if portfolio.projects %} {% for project in portfolio.projects %}
     <div class="container w-full">
       <div
-        class="relative w-full h-fit border p-4 mx-auto bg-local bg-cover bg-no-repeat"
+        class="w-full h-fit border p-4 mx-auto bg-local bg-cover bg-no-repeat"
         style="background-image: url({{project.image}});"
       >
-        <div class="w-full bg-white/75 rounded-sm p-4">
-          <h3>{{project.title}}</h3>
-          <p>{{project.description}}</p>
-          <strong>
-            <a href="">Check out deployment<br /></a>
-            <a href="">Review on Github</a>
-          </strong>
+        <div
+          class="w-full bg-white bg-opacity-30 backdrop-filter backdrop-blur-sm rounded p-4"
+        >
+          <h3 class="text-center">{{project.title}}</h3>
+          <p class="text-left">{{project.description}}</p>
+          <div class="relative md:static text-center my-4">
+            <div
+              class="absolute md:hidden inset-x-8 bottom-6 w-11/12 h-10 bg-goldenrod"
+            ></div>
+            <div
+              class="absolute md:hidden inset-x-4 bottom-3 w-11/12 h-10 bg-shamrock-green"
+            ></div>
+            <div
+              class="absolute md:hidden inset-x-0 bottom-0 w-11/12 h-10 bg-cg-blue"
+            ></div>
+            <div class="relative md:static">
+              <strong class="text-cultured md:text-raisin-black text-lg">
+                <a
+                  href="{{project.links.deployment}}"
+                  class="hover:text-cg-blue underline"
+                  >CHECK OUT DEPLOYMENT<br
+                /></a>
+                <a
+                  href="{{project.links.github}}"
+                  class="hover:text-cg-blue underline"
+                  >REVIEW ON GITHUB</a
+                >
+              </strong>
+            </div>
+          </div>
         </div>
       </div>
     </div>
