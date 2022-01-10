@@ -62,7 +62,36 @@ path: home
         >
           <h3 class="text-center">{{project.title}}</h3>
           <p class="text-left">{{project.description}}</p>
-          <div class="relative md:static text-center my-4">
+          <div class="text-center mt-4 -mb-10 md:mb-4">
+            <div class="opacity-60 md:hidden">
+              <div
+                class="transform translate-x-0 w-11/12 h-10 bg-goldenrod"
+              ></div>
+              <div
+                class="transform translate-x-4 -translate-y-7 w-11/12 h-10 bg-shamrock-green"
+              ></div>
+              <div
+                class="transform translate-x-8 -translate-y-12 w-11/12 h-10 bg-cg-blue"
+              ></div>
+            </div>
+            <div
+              class="transform -translate-y-28 md:transform-none text-cultured md:text-raisin-black text-lg"
+            >
+              <strong>
+                <a
+                  href="{{project.links.deployment}}"
+                  class="hover:text-cg-blue underline"
+                  >CHECK OUT DEPLOYMENT<br
+                /></a>
+                <a
+                  href="{{project.links.github}}"
+                  class="hover:text-cg-blue underline"
+                  >REVIEW ON GITHUB</a
+                >
+              </strong>
+            </div>
+          </div>
+          <!-- <div class="relative md:static text-center my-4">
             <div
               class="absolute md:hidden inset-x-8 bottom-6 w-11/12 h-10 bg-goldenrod"
             ></div>
@@ -86,7 +115,7 @@ path: home
                 >
               </strong>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
