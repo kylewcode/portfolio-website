@@ -4,7 +4,7 @@
     x-data="{ 
       isOpen: false,
       toggle() {
-        this.isOpen = this.isOpen ? close() : true;
+        this.isOpen = this.isOpen ? this.close() : true;
       },
       close() {
         this.isOpen = false;
