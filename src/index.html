@@ -160,7 +160,34 @@ path: home
     {% endif %}
   </section>
 
-  <section id="hire-me" class="text-raisin-black text-center">
+  <section
+    id="certifications"
+    class="container flex flex-col justify-center text-raisin-black text-center mb-12"
+  >
+    <h2
+      class="w-max mx-auto p-3 mb-8 text-raisin-black text-2xl border-b-2 shadow"
+    >
+      CERTIFICATIONS
+    </h2>
+
+    {% if certifications.items %}
+    <ul class="list-none inline-block md:-ml-10 md:text-left text-xl">
+      {% for certification in certifications.items %}
+      <li>
+        <span class="fa fa-certificate"></span>
+        <a
+          href="{{certification.link}}"
+          target="_blank"
+          class="hover:text-cg-blue underline"
+          >{{certification.title}}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+
+  <section id="hire-me" class="text-raisin-black text-center mb-4">
     <h2
       class="w-max mx-auto p-3 mb-8 text-raisin-black text-2xl border-b-2 shadow"
     >
