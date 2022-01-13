@@ -46,7 +46,7 @@ path: home
 
   <section id="projects" class="container flex flex-col justify-center gap-y-8">
     <h2
-      class="w-1/2 mx-auto p-3 text-raisin-black text-2xl text-center border-b-2 shadow"
+      class="w-max mx-auto p-3 text-raisin-black text-2xl text-center border-b-2 shadow"
     >
       PROJECTS
     </h2>
@@ -141,28 +141,34 @@ path: home
     </div>
   </section>
 
-  <section id="skills" class="text-raisin-black text-center">
-    <h2 class="text-2xl">SKILLS/TECH</h2>
+  <section
+    id="skills"
+    class="container flex flex-col justify-center text-raisin-black text-center mb-12"
+  >
+    <h2
+      class="w-max mx-auto p-3 mb-8 text-raisin-black text-2xl border-b-2 shadow"
+    >
+      SKILLS/TECH
+    </h2>
 
-    <h3 class="text-lg m-auto">Frontend Development</h3>
-
-    <ul class="list-disc inline-block md:-ml-10 md:text-left">
-      <li>React</li>
-      <li>Javascript</li>
-      <li>HTML5</li>
-      ...
+    {% if skills.titles %}
+    <ul class="list-none inline-block md:-ml-10 md:text-left">
+      {% for title in skills.titles %}
+      <li><span class="fa fa-code"></span> {{title}}</li>
+      {% endfor %}
     </ul>
+    {% endif %}
   </section>
 
   <section id="hire-me" class="text-raisin-black text-center">
-    <h2 class="text-2xl">HIRE ME</h2>
+    <h2
+      class="w-max mx-auto p-3 mb-8 text-raisin-black text-2xl border-b-2 shadow"
+    >
+      HIRE ME
+    </h2>
     <a href="#" class="hover:text-cg-blue hover:underline font-semibold"
       >Download Resume
-      <img
-        src="https://source.unsplash.com/random/50x50"
-        alt="Download Resume"
-        class="inline"
-      />
+      <span class="fas fa-file-download"></span>
     </a>
     <a
       href="mailto:williams.kyleg@gmail.com"
