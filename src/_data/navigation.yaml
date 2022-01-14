@@ -1,14 +1,14 @@
 ---
 items:
-  - text: About
-    url: "#"
   - text: Projects
-    url: "#"
+    url: "#projects"
   - text: Social
-    url: "#"
-  - text: Skills
-    url: "#"
+    url: "#social"
+  - text: Skills/Tech
+    url: "#skills"
+  - text: Certifications
+    url: "#certifications"
+  - text: Awards
+    url: "#awards"
   - text: Hire Me
-    url: "#"
-  - text: Blog
-    url: "/blog"
+    url: "#hire-me"
