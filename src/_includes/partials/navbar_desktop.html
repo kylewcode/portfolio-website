@@ -1,0 +1,38 @@
+<div
+  class="{{ 'lg:fixed' if path == 'home' }} w-full hidden lg:block shadow-3xl"
+>
+  <nav
+    class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto"
+  >
+    <!--Logo etc-->
+    <div class="flex items-center">
+      <a
+        href="/"
+        class="text-raisin-black font-bold text-lg focus:outline-none focus:text-cg-blue"
+      >
+        KW</a
+      >
+    </div>
+
+    <!--Menu-->
+    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center">
+      {% if navigation.items %}
+
+      <ul
+        class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center"
+      >
+        {% for item in navigation.items %}
+        <li class="nav__item mr-3">
+          <a
+            class="text-ml inline-block text-raisin-black no-underline hover:text-cg-blue focus:text-cg-blue focus:outline-none py-2 px-4"
+            href="{{ item.url }}"
+            >{{ item.text }}</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
+
+      {% endif %}
+    </div>
+  </nav>
+</div>
