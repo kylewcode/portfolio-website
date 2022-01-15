@@ -11,24 +11,41 @@ path: home
     class="container mx-auto lg:h-screen flex flex-col justify-center items-center"
   >
     <div>
-      <h1 class="text-raisin-black">
+      <h1 class="text-raisin-black md:text-5xl">
         <strong class="md:block">{{firstname}}</strong>
         <strong class="md:block">{{lastname}}</strong>
-        <strong class="block font-serif font-thin tracking-widest text-base"
+        <strong
+          class="block font-serif font-thin tracking-widest text-base md:text-2xl"
           >{{title}}</strong
         >
       </h1>
+
       <div
-        class="border-double w-36 text-center text-raisin-black mx-auto hidden md:block"
+        class="border-double w-36 text-center text-raisin-black mx-auto hidden lg:block"
       >
         <a href="#projects">View My Projects</a>
       </div>
     </div>
 
-    <img src="/static/img/kyle-profile-150w.jpeg" alt="Profile image" />
+    <img
+      class="w-1/2"
+      loading="lazy"
+      src="/static/img/kyle-profile-1024w.jpeg"
+      srcset="
+        /static/img/kyle-profile-1024w.jpeg 1024w,
+        /static/img/kyle-profile-768w.jpeg   768w,
+        /static/img/kyle-profile-150w.jpeg   150w
+      "
+      sizes="
+        (max-width: 767px) 150px,
+        (max-width: 1023px) 768px,
+        (min-width: 1024px) 1024px
+      "
+      alt="Profile image of Kyle Williams"
+    />
 
     <div
-      class="border-8 border-double border-shamrock-green w-40 text-raisin-black text-center mx-auto mt-8 mb-2 p-0.5 md:hidden opacity-75 hover:shadow-lg hover:opacity-100"
+      class="border-8 border-double border-shamrock-green w-40 text-raisin-black text-center mx-auto mt-8 mb-2 p-0.5 lg:hidden opacity-75 hover:shadow-lg hover:opacity-100"
     >
       <a href="#projects" class="focus:outline-none focus:text-cg-blue"
         >View My Projects</a
