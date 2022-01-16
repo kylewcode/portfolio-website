@@ -2,8 +2,6 @@
 items:
   - text: Projects
     url: "#projects"
-  - text: Social
-    url: "#social"
   - text: Skills/Tech
     url: "#skills"
   - text: Certifications

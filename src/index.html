@@ -63,7 +63,7 @@ path: home
 
   <section id="projects" class="container flex flex-col justify-center gap-y-8">
     <h2
-      class="w-max mx-auto p-3 text-raisin-black text-2xl text-center border-b-2 shadow"
+      class="w-max mx-auto my-16 p-3 text-raisin-black text-2xl lg:text-5xl text-center border-b-2 lg:border-0 shadow lg:shadow-none"
     >
       PROJECTS
     </h2>
@@ -71,7 +71,7 @@ path: home
     {% if portfolio.projects %} {% for project in portfolio.projects %}
     <div class="container w-full">
       <div
-        class="w-full h-fit border p-4 mx-auto bg-local bg-cover bg-no-repeat"
+        class="w-full lg:w-1/2 h-fit border p-4 mx-auto bg-local bg-cover bg-no-repeat"
         style="background-image: url({{project.image}});"
       >
         <div
@@ -96,18 +96,19 @@ path: home
             >
               <button
                 type="button"
-                class="block mx-auto transition duration-500 ease-in-out hover:font-extrabold hover:underline transform hover:-translate-y-1 hover:scale-125"
+                class="block mx-auto transition duration-500 ease-in-out hover:font-extrabold hover:underline transform hover:-translate-y-1 hover:scale-125 hover:text-cg-blue"
               >
-                <a href="{{project.links.deployment}}" target="_blank"
-                  >CHECK OUT DEPLOYMENT<br
+                <a href="{{project.links.deployment}}" target="_blank">
+                  <span class="fas fa-arrow-right"></span> CHECK OUT
+                  DEPLOYMENT<br
                 /></a>
               </button>
               <button
                 type="button"
-                class="block mx-auto transition duration-500 ease-in-out hover:font-extrabold hover:underline transform hover:-translate-y-1 hover:scale-125"
+                class="block mx-auto transition duration-500 ease-in-out hover:font-extrabold hover:underline transform hover:-translate-y-1 hover:scale-125 hover:text-cg-blue"
               >
                 <a href="{{project.links.github}}" target="_blank"
-                  >REVIEW ON GITHUB<br
+                  ><span class="fas fa-arrow-right"></span> REVIEW ON GITHUB<br
                 /></a>
               </button>
             </div>
