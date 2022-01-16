@@ -47,9 +47,7 @@ path: home
     <div
       class="border-8 border-double border-shamrock-green w-40 text-raisin-black text-center mx-auto mt-8 mb-2 p-0.5 lg:hidden opacity-75 hover:shadow-lg hover:opacity-100"
     >
-      <a href="#projects" class="focus:outline-none focus:text-cg-blue"
-        >View My Projects</a
-      >
+      <a href="#projects" class="focus:text-cg-blue">View My Projects</a>
     </div>
   </section>
 
@@ -96,6 +94,7 @@ path: home
             >
               <button
                 type="button"
+                tabindex="-1"
                 class="block mx-auto transition duration-500 ease-in-out hover:font-extrabold hover:underline transform hover:-translate-y-1 hover:scale-125 hover:text-cg-blue"
               >
                 <a href="{{project.links.deployment}}" target="_blank">
@@ -105,6 +104,7 @@ path: home
               </button>
               <button
                 type="button"
+                tabindex="-1"
                 class="block mx-auto transition duration-500 ease-in-out hover:font-extrabold hover:underline transform hover:-translate-y-1 hover:scale-125 hover:text-cg-blue"
               >
                 <a href="{{project.links.github}}" target="_blank"
@@ -191,7 +191,7 @@ path: home
     class="relative container flex flex-col justify-center text-raisin-black text-center mb-12"
   >
     <h2
-      class="w-max mx-auto p-3 mb-8 text-raisin-black text-2xl border-b-2 shadow"
+      class="w-max mx-auto my-16 p-3 text-raisin-black text-2xl lg:text-5xl text-center border-b-2 lg:border-0 shadow lg:shadow-none"
     >
       SKILLS/TECH
     </h2>
@@ -200,7 +200,7 @@ path: home
     ></div>
 
     {% if skills.titles %}
-    <ul class="relative list-none inline-block md:-ml-10 md:text-left">
+    <ul class="relative list-none">
       {% for title in skills.titles %}
       <li><span class="fa fa-code"></span> {{title}}</li>
       {% endfor %}
@@ -213,17 +213,17 @@ path: home
     class="relative container flex flex-col justify-center text-raisin-black text-center mb-12"
   >
     <h2
-      class="w-max mx-auto p-3 mb-8 text-raisin-black text-2xl border-b-2 shadow"
+      class="w-max mx-auto my-16 p-3 text-raisin-black text-2xl lg:text-5xl text-center border-b-2 lg:border-0 shadow lg:shadow-none"
     >
       CERTIFICATIONS
     </h2>
 
     <div
-      class="w-1/2 h-1/2 absolute transform translate-x-1/2 translate-y-1/2 skew-x-12 bg-cg-blue bg-opacity-30"
+      class="w-1/2 h-1/2 absolute transform translate-x-1/2 translate-y-2/3 skew-x-12 bg-cg-blue bg-opacity-30"
     ></div>
 
     {% if certifications.items %}
-    <ul class="relative list-none inline-block md:-ml-10 md:text-left text-lg">
+    <ul class="relative list-none text-lg">
       {% for certification in certifications.items %}
       <li>
         <span class="fa fa-certificate"></span>
@@ -244,13 +244,13 @@ path: home
     class="relative container flex flex-col justify-center text-raisin-black text-center mb-12"
   >
     <h2
-      class="w-max mx-auto p-3 mb-8 text-raisin-black text-2xl border-b-2 shadow"
+      class="w-max mx-auto my-16 p-3 text-raisin-black text-2xl lg:text-5xl text-center border-b-2 lg:border-0 shadow lg:shadow-none"
     >
       AWARDS
     </h2>
 
     <div
-      class="w-1/2 h-1/2 absolute transform translate-x-1/2 translate-y-1/2 skew-x-12 bg-goldenrod bg-opacity-30"
+      class="w-1/2 h-1/2 absolute transform translate-x-1/2 translate-y-2/3 skew-x-12 bg-goldenrod bg-opacity-30"
     ></div>
 
     <div class="relative">
@@ -267,23 +267,31 @@ path: home
     </div>
   </section>
 
-  <section id="hire-me" class="text-raisin-black text-center mb-4">
+  <section
+    id="hire-me"
+    class="relative container flex flex-col justify-center text-raisin-black text-center mb-4"
+  >
     <h2
-      class="w-max mx-auto p-3 mb-8 text-raisin-black text-2xl border-b-2 shadow"
+      class="w-max mx-auto my-16 p-3 text-raisin-black text-2xl lg:text-5xl text-center border-b-2 lg:border-0 shadow lg:shadow-none"
     >
       HIRE ME
     </h2>
-    <a
-      href="./static/file/resume-2022.pdf"
-      target="_blank"
-      class="hover:text-cg-blue hover:underline font-semibold"
-      >Download Resume
-      <span class="fas fa-file-download"></span>
-    </a>
-    <a
-      href="mailto:williams.kyleg@gmail.com"
-      class="block hover:text-cg-blue hover:underline font-semibold"
-      >williams.kyleg@gmail.com</a
-    >
+    <div
+      class="w-1/2 h-1/2 absolute transform translate-x-1/2 translate-y-2/3 skew-x-12 bg-shamrock-green bg-opacity-30"
+    ></div>
+    <div class="relative">
+      <a
+        href="./static/file/resume-2022.pdf"
+        target="_blank"
+        class="hover:text-cg-blue hover:underline font-semibold"
+        >Download Resume
+        <span class="fas fa-file-download"></span>
+      </a>
+      <a
+        href="mailto:williams.kyleg@gmail.com"
+        class="block hover:text-cg-blue hover:underline font-semibold"
+        >williams.kyleg@gmail.com</a
+      >
+    </div>
   </section>
 </div>

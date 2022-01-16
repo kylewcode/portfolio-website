@@ -30,7 +30,7 @@
       aria-expanded="isOpen"
       aria-controls="$id('dropdown-button')"
       type="button"
-      class="ml-auto block lg:hidden px-2 text-raisin-black hover:text-cg-blue focus:outline-none focus:text-cg-blue"
+      class="ml-auto block lg:hidden px-2 text-raisin-black hover:text-cg-blue focus:text-cg-blue"
       aria-label="Menu"
     >
       <svg
@@ -70,7 +70,7 @@
         {% for item in navigation.items %}
         <li class="nav__item mr-3">
           <a
-            class="text-ml inline-block text-raisin-black no-underline hover:text-cg-blue focus:text-cg-blue focus:outline-none py-2 px-4"
+            class="text-ml inline-block text-raisin-black no-underline hover:text-cg-blue focus:text-cg-blue py-2 px-4"
             href="{{ item.url }}"
             >{{ item.text }}</a
           >
