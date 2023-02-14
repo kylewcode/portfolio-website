@@ -6,9 +6,3 @@ projects:
     links:
       deployment: "https://kylewcode-invoice-generator.netlify.app/"
       github: "https://github.com/kylewcode/invoice-generator"
-  - image: "../static/img/kyle-field-wide-300w.jpg"
-    title: "Formal Letter Generator"
-    description: "React application that validates and dynamically displays user form inputs."
-    links:
-      deployment: "https://formal-letter-generator.netlify.app/"
-      github: "https://github.com/kylewcode/react-html-letter-v2"
