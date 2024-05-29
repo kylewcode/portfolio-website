@@ -1,6 +1,12 @@
 ---
 projects:
   - image: "../static/img/kyle-stairs-300w.jpg"
+    title: "Carnnovate"
+    description: "A user-driven recipe database for the Carnivore Diet."
+    links:
+      deployment: "https://carnnovate-4fb4882151ae.herokuapp.com/"
+      github: "https://github.com/kylewcode/carnnovate"
+  - image: "../static/img/kyle-stairs-300w.jpg"
     title: "Invoice Generator"
     description: "Retrieves a list of available products and services from API resources, populates an HTML form, and enables a user to post an invoice to a database."
     links:

@@ -1,9 +1,9 @@
 ---
 titles:
-  - React
-  - Node
-  - Express
-  - Bootstrap
+  - HTML
+  - CSS | Bootstrap | Tailwind
+  - JavaScript | React
   - Git
-  - AJAX
-  - Jest
+  - Node | Express
+  - MySQL
+  - Deployment
